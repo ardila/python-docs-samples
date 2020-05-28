@@ -21,7 +21,8 @@ WORKDIR ${WORKDIR}
 COPY requirements.txt .
 COPY streaming_beam.py .
 
-ENV FLEX_TEMPLATE_PYTHON_REQUIREMENTS_FILE="${WORKDIR}/requirements.txt"
 ENV FLEX_TEMPLATE_PYTHON_PY_FILE="${WORKDIR}/streaming_beam.py"
 
-RUN pip install -U -r ./requirements.txt
+RUN pip install matplotlib
+RUN pip install apache-beam[gcp]==2.21.0
+RUN pip install pip==9.0.3

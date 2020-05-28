@@ -1,22 +1,14 @@
 {
-  "name": "Streaming beam Python flex template",
-  "description": "Streaming beam example for python flex template.",
+  "name": "Batch beam Python flex template",
+  "description": "Batch beam example for python flex template.",
   "parameters": [
     {
-      "name": "input_subscription",
-      "label": "Input PubSub subscription.",
-      "helpText": "Name of the input PubSub subscription to consume from.",
-      "regexes": [
-        "[/:-_.a-zA-Z0-9]+"
-      ]
-    },
-    {
-      "name": "output_table",
-      "label": "BigQuery output table name.",
-      "helpText": "Name of the BigQuery output table name.",
+      "name": "output_text",
+      "label": "Output text location",
+      "helpText": "Path to output text location",
       "is_optional": true,
       "regexes": [
-        "[/:-_.a-zA-Z0-9]+"
+        ".*"
       ]
     }
   ]
